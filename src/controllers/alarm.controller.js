@@ -6,7 +6,8 @@ const AlarmModel = require('../models/Alarm');
 alarmCtrls.getAllsAlarms = async (req, res, next) => {
     try {
         const alarms = await AlarmModel.find();
-        res.status(200).json(alarms);
+        //res.status(200).json(alarms);
+        res.status(200).send('gghh');
     } catch (error) {
         next(error); 
     };
